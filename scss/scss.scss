@@ -205,64 +205,6 @@
   }
 
       @media(min-width:601px){
-        *{
-          text-decoration: none;
-          list-style: none;
-          color: #f1f1f1;
-        }
-        body{
-          background-color: black;
-        }
-          .container-box {
-            display: grid;
-            grid-gap: 10px;
-            grid-template-columns: auto;
-            grid-template-rows: 50px 50px;
-            grid-template-areas:
-            ' a f f f '
-            'a c c c '
-            ;
-          }
-          
-          
-          .a {
-            height: 120px;
-            width: 350px;
-            border-radius: 5px;
-            grid-area: a;
-          }
-          
-          .f {
-            grid-area: f;
-          }
-////////////////////////MENÚ DE NAVEGACIÓN/////////////////////////////////
-          .ht {
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            list-style: none;
-            text-decoration: none;
-            column-gap: 10px;
-            height: -webkit-fill-available;
-            &__LI a{
-              text-decoration: none;
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              padding-right: 25px;
-              :hover{
-                transition: .5s linear;
-                border-radius: 5px;
-                border-bottom: 1px solid #f1f1f1;
-                border-top: 1px solid #f1f1f1;
-                border-left: 1px solid #f1f1f1;
-                border-left: 1px solid #f1f1f1;
-                color: #000;
-                background-color: #f1f1f1;
-              }
-            }
-          }
           /////////////////////////PRODUCTOS/////////////////////////////////////
           //BEM5
           .pro{
