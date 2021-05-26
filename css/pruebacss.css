@@ -22,6 +22,11 @@
     height: 220px;
     width: 200px;
     grid-area: f; }
+  .btn {
+    width: 48px;
+    height: 48px;
+    font-size: x-small;
+    padding: 0%; }
   .ht {
     margin: 0;
     display: flex;
@@ -91,13 +96,15 @@
         background: none;
         border: none;
         border-radius: 5px;
-        padding-left: 20px; }
+        padding-left: 20px;
+        width: 70x;
+        height: 48px; }
         .form1__form2--input input:hover {
           transition: .3s linear;
           color: #000000;
           border: 1px solid #f1f1f1;
           border-radius: 5px;
-          background-color: #f1f1f1; }
+          background-color: #242323; }
       .form1__form2--input textarea {
         background: none;
         margin: none; } }
