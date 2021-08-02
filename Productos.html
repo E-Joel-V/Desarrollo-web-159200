@@ -32,26 +32,29 @@
                 <table class="pro__pro--pro">
                   <tr>
                     <!--Productos-->
-                      <td><img src="pro/death_note.jpg" alt="Death Note">
+                      <td class="deat"><img src="pro/death_note.jpg" alt="Death Note">
                         <h2>Libreta de Death note</h2>
                         <h3>Precio $300</h3>
                         <h3>informacion Técnica</h3>
                         <ul>
                             <li>En la historia, "<strong>Death Note</strong>" es un cuaderno con una tapa negra y tu nombre está grabado en él. ... Por lo general, a menos que se indique la causa de la muerte, el nombre de la persona que figura en este cuaderno morirá de un ataque cardíaco después de 40 segundos. Se recomienda usar solo en emergencias.</li>
                     </ul>
+                    <button onclick="comprar(1);">Agregar al carrito</button>
                     </td>
                   </tr>
                   <tr>
-                    <td><img class="inv" src="pro/invisible.jpg" alt="Capa de Invisivilidad de Harry Potter">
+                    <td class="invi">
+                      <img class="inv" src="pro/invisible.jpg" alt="Capa de Invisivilidad de Harry Potter">
                       <h2>Capa de invisibilidad de Harry Potter</h2>
                       <h3>Precio $500</h3>
                         <h3>Info técnica</h3>
                         <li>Con esta capa puedes hacerte <strong>invisible</strong> a todas las personas y animales</li>
                         <ol>Utilizar en caso de emergencia</ol>
+                        <button onclick="comprar(2);">Agregar al carrito</button>
                         </td>
                 </tr>
                 <tr>
-                  <td><img class="varita" src="pro/varita.jpg" alt="Varita de Sauco de Harry Potter">
+                  <td class="var"><img class="varita" src="pro/varita.jpg" alt="Varita de Sauco de Harry Potter">
                     <h2>Varita de Sauco de Harry Potter</h2>
                     <h3>Precio $1500</h3>
                   <h3>Info técnica</h3>
@@ -59,6 +62,7 @@
                 <li>Esta es la <strong>varita más poderosa</strong> de la saga, con esta varita puedes hacer cualquier cosa</li>
             <li>TEN MUCHO CUIDADO, ES MUY FRAGIL</li>
           </ul>
+          <button onclick="comprar(3);">Agregar al carrito</button>
           </td>
                 </tr>
                 <tr>
@@ -104,5 +108,6 @@
           </div>
         </footer>
       </div>
+      <script src="js/index.js"></script>
 </body>
 </html>

@@ -36,15 +36,15 @@
           <legend class="campos"><Strong></Strong></legend>
             <div class="form1__form2--input">
               <label for="nombre">Nombre:</label>
-              <input type="text" name="nombre" placeholder="Nombre"><br>
+              <input onfocusout="validarnombre();" id="nombre" type="text" name="nombre" placeholder="Nombre"><div id="vnombre"></div>
               <label for="apellido">Apellido:</label>
-              <input type="text" name="apellido" placeholder="Apellido"><br>
-              <label for="email">Correo :</label>
-              <input type="email" name="email" placeholder="Correo electronico" required><br>
+              <input onfocusout="validarapellido();" id="apellido" type="text" name="apellido" placeholder="Apellido"><div id="ap"></div>
+              <label for="email">Correo:</label>
+              <input id="email" type="email" name="email" placeholder="Correo electronico" required><br>
               <label for="Comentarios">Mensaje:</label><br>
-              <textarea name="Comentarios" rows="8" cols="40" required></textarea><br>
-              <button type="submit" class="btn btn-primary">Enviar formulario</button>
-              <button type="reset" class="btn btn-secondary">Resetear formulario</button>
+              <textarea onfocusout="validartext();" id="msg" name="Comentarios" rows="8" cols="40" required></textarea><div id="text"></div><br>
+              <button type="submit" class="btn btn-primary" id="inviar">Enviar formulario</button>
+              <button type="reset" class="btn btn-secondary" id="reset">Resetear formulario</button>
         </div>
     </form>
       </div>
@@ -70,5 +70,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/contacto.js"></script>
 </body>
 </html>
