@@ -8,26 +8,48 @@
   <link rel="stylesheet" href="css/pruebacss.css">
   <meta name="description" content="Compre productos de animes famosos. Envio gratis a todo el país.">
   <meta name="keywords" content="otzone, otzone productos, ot zone, productos otzone">
-<link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon"> 
+  <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon"> 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js'></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 </head>
 <body>
   <nav>
     <div class="container-box">
       <img class="box a" src="imagenes/zero-two.jpg">
-        <div class="box f">
-          <ul class="ht">
-            <!--Navegación-->
-                <li class="ht__LI"><a href="index.html"><strong>Inicio</strong></a></li>
-                <li class="ht__LI"><a href="Productos.html"><strong>Productos</strong></a></li>
-                <li class="ht__LI"><a href="Como_comprar.html"><strong>Cómo Comprar</strong></a></li>
-                <li class="ht__LI"><a href="Quienes_somos.html"><strong>Quiénes Somos</strong></a></li>
-                <li class="ht__LI"><a href="Preguntas_frecuentes.html"><strong>Preguntas Frecuentes</strong></a></li>
-                <li class="ht__LI"><a href="Contacto.html"><strong>Contacto</strong></a></li>
-                <li class="ht__LI"><a href="carrito_de_compras.html"><strong>Carrito</strong></a></li>
+      <div class="box f">
+        <ul class="ht">
+          <!--Navegación-->
+          <li class="ht__LI"><a href="index.html"><strong>Inicio</strong></a></li>
+          <li class="ht__LI"><a href="Productos.html"><strong>Productos</strong></a></li>
+          <li class="ht__LI"><a href="Como_comprar.html"><strong>Cómo Comprar</strong></a></li>
+          <li class="ht__LI"><a href="Quienes_somos.html"><strong>Quiénes Somos</strong></a></li>
+          <li class="ht__LI"><a href="Preguntas_frecuentes.html"><strong>Preguntas Frecuentes</strong></a></li>
+          <li class="ht__LI"><a href="Contacto.html"><strong>Contacto</strong></a></li>
+          <li class="ht__LI"><button class="carrito-btn"><strong>Carrito</strong></button></li>
         </div>
       </div>
-</nav>
-  <div class="productos">
+    </nav>
+    <div id="i-ventana" class="c-ventana">
+      <div>
+        <div class="carrito">
+          <button class="cerrarC"> X </button>
+          <h1>Carrito de compras</h1>
+          <div id="Image">
+            
+          </div>
+          <div id="compra2">
+            
+          </div>
+          <div id="$">
+  
+          </div>
+        </div>     
+       </div>
+    </div>
+<div class="productos">
     <main>
       <!--Inicio De los productos-->
       <h1 class="pros">Productos</h1>
@@ -84,5 +106,6 @@
 </div>
 <script src="bootstrap-5.0.0-beta3-dist\js\bootstrap.js"></script>
 <script src="js/index.js"></script>
+
 </body>
 </html>

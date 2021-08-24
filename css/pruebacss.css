@@ -317,3 +317,21 @@ button {
 
 td {
   padding-bottom: 10px; }
+
+.c-ventana {
+  display: none;
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  z-index: 2;
+  background-color: black;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: visible; }
+  .c-ventana div {
+    color: white; }
+  .c-ventana h1 {
+    color: white; }
+  .c-ventana span {
+    color: #f1f1f1; }
