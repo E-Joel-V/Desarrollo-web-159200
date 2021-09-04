@@ -9,6 +9,11 @@
    <meta name="keywords" content="otzone, otzone productos, ot zone, productos otzone">
    <link rel="shortcut icon" href="imagenes/Logo.png" type="image/x-icon"> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js'></script>
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
   </head>
 <body>
   <nav>
@@ -32,6 +37,7 @@
     <div class="carrito">
       <button class="cerrarC"> X </button>
       <h1>Carrito de compras</h1>
+      <button onclick='borrarTodo();'>Eliminar el carrito</button>
       <div id="Image">
         
       </div>
@@ -90,7 +96,8 @@
                     <ul>
                 <li>Esta mascarilla está basada en <strong>FNAF(Five Night's at freddys)</strong></li>
             <li>con esta mascarilla te vas a ver muy facer@</li>
-        </ul>
+          </ul>
+          <button onclick="comprar(4);">Agregar al carrito</button>
     </td>
                 </tr>
                 <tr>
@@ -100,7 +107,9 @@
                         <ul>
                     <li>- Peso: 1.230 kg. - Motor: V6, 2.849 cm3, 12 válvulas, en posición trasera. - Potencia:132 CV a 5.550 rpm. - Transmisión: Manual de 5 velocidades, propulsión trasera.</li>
                 <li>con este DeLorean puedes viajar al pasado aprovechalo!</li>
-            </ul></td>
+              </ul>
+              <button onclick="comprar(5);">Agregar al carrito</button>
+          </td>
                 </tr>
             </table>
     </main>

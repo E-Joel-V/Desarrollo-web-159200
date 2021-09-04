@@ -13,6 +13,8 @@ function Producto(Productoss) {
 const Death_Note = new Producto(["Death Note", "$300", "Death Note es un cuaderno con una tapa negra y tu nombre está grabado en él. ... Por lo general, a menos que se indique la causa de la muerte, el nombre de la persona que figura en este cuaderno morirá de un ataque cardíaco después de 40 segundos. Se recomienda usar solo en emergencias.", "pro/death_note.jpg"])
 const Capa = new Producto(["Capa de Harry Potter", "$500", "Con esta capa puedes hacerte invisible a todas las personas y animales. Utilizar en caso de emergencia", "pro/invisible.jpg"])
 const Varita = new Producto(["Varita de Sauco de Harry Potter", "$1500", "Esta es la varita más poderosa de la saga, con esta varita puedes hacer cualquier cosa. EN MUCHO CUIDADO, ES MUY FRAGIL", "pro/varita.jpg"])
+const fnaf = new Producto(["Marcarilla de FNAF", "$266", "Esta mascarilla está basada en FNAF(Five Night's at freddys). Con esta mascarilla te vas a ver muy facer@", "pro/mascarilla_fnaf.jpg"])
+const delorean = new Producto(["delorean", "$1,000,000", "- Peso: 1.230 kg. - Motor: V6, 2.849 cm3, 12 válvulas, en posición trasera. - Potencia:132 CV a 5.550 rpm. - Transmisión: Manual de 5 velocidades, propulsión trasera. Con este DeLorean puedes viajar al pasado aprovechalo!", "pro/delorean.jpg"])
 console.clear();
 function comprar(producto) {
     let carrito = []
@@ -32,6 +34,17 @@ function comprar(producto) {
         let objeto = {producto: Varita.nombre, precio: Varita.precio, image: Varita.image}
         carrito.push(objeto)
     }
+ else if(producto == 4){
+    fnaf.comprar();
+
+    let objeto = {producto: fnaf.nombre, precio: fnaf.precio, image: fnaf.image}
+    carrito.push(objeto)
+}  else if(producto == 5){
+    delorean.comprar();
+
+    let objeto = {producto: delorean.nombre, precio: delorean.precio, image: delorean.image}
+    carrito.push(objeto)
+}
     localStorage.setItem('carrito', JSON.stringify(carrito))
     let posicion = 0;
     let carritoPrint = "";
