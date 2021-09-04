@@ -36,10 +36,12 @@ function comprar(producto) {
     let posicion = 0;
     carrito.forEach(producto => {
         document.getElementById('compra2').innerHTML += `
-        <h1>${producto.producto}</h1>
-        <p>${producto.precio}</p>
+        <div id='carrito-${posicion}'>
         <img src="${producto.image}">
+       <h1>${producto.producto}</h1>
+        <p>${producto.precio} </p>
         <button class="remove" onclick="Remove(${posicion})" >Eliminar Producto</button>
+        </div>
 		`
         posicion++;
 	})
@@ -58,7 +60,6 @@ function OcultarCarrito() {
     $('#i-ventana').hide('fast')
 }
 function Remove(remove) {
-
 let carrito = JSON.parse(localStorage.getItem('carrito'))
 let carritoNuevo = [];
 
@@ -69,12 +70,16 @@ let carritoNuevo = [];
 	}
     let posicion = 0;
     carritoNuevo.forEach(producto => {
+
         document.getElementById('compra2').innerHTML += `
+        <div id='carrito-${posicion}'>
         <h1>${producto.producto}</h1>
         <p>${producto.precio}</p>
         <img src="${producto.image}">
         <button class="remove" onclick="Remove(${posicion})" >Eliminar Producto</button>
+        </div>
 		`
+        document.getElementById(`carrito-${posicion}`).remove()
         posicion++;
 	})
 	localStorage.setItem('carrito', JSON.stringify(carritoNuevo))
