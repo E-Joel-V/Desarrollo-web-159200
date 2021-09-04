@@ -34,18 +34,20 @@ function comprar(producto) {
     }
     localStorage.setItem('carrito', JSON.stringify(carrito))
     let posicion = 0;
+    let carritoPrint = "";
     carrito.forEach(producto => {
-        document.getElementById('compra2').innerHTML += `
+        carritoPrint += `
         <div id='carrito-${posicion}'>
         <img src="${producto.image}">
        <h1>${producto.producto}</h1>
         <p>${producto.precio} </p>
         <button class="remove" onclick="Remove(${posicion})" >Eliminar Producto</button>
         </div>
+    <hr>
 		`
         posicion++;
 	})
-    
+    document.getElementById('compra2').innerHTML = carritoPrint
     /*    const image = localStorage.getItem("Image")
     document.getElementById("Image").innerHTML = "<img src='" + image + "'></img>"
     const compra2 = localStorage.getItem("Producto")
@@ -60,7 +62,7 @@ function OcultarCarrito() {
     $('#i-ventana').hide('fast')
 }
 function Remove(remove) {
-let carrito = JSON.parse(localStorage.getItem('carrito'))
+let carrito = JSON.parse(localStorage.getItem('carrito'));
 let carritoNuevo = [];
 
 	for (let i = 0 ; i<carrito.length; i++) {
@@ -69,19 +71,20 @@ let carritoNuevo = [];
 		}
 	}
     let posicion = 0;
-    carritoNuevo.forEach(producto => {
-
-        document.getElementById('compra2').innerHTML += `
+    let carritoPrint = "";
+    carrito.forEach(producto => {
+        carritoPrint += `
         <div id='carrito-${posicion}'>
-        <h1>${producto.producto}</h1>
-        <p>${producto.precio}</p>
         <img src="${producto.image}">
+       <h1>${producto.producto}</h1>
+        <p>${producto.precio} </p>
         <button class="remove" onclick="Remove(${posicion})" >Eliminar Producto</button>
         </div>
-		`
-        document.getElementById(`carrito-${posicion}`).remove()
+        <hr>
+        `
         posicion++;
-	})
+    })
+    document.getElementById('compra2').innerHTML = carritoPrint;
 	localStorage.setItem('carrito', JSON.stringify(carritoNuevo))
 
 }
@@ -91,4 +94,9 @@ $('.cerrarC').on("click", OcultarCarrito)
 if ( localStorage.getItem('carrito')) { carrito = JSON.parse(localStorage.getItem('carrito')) } else { carrito = [] }
 if( carrito.length == 0){
     $('#compra2').html('<span>¡No ha agregado ningún profucto al carrito!</span>')
+}
+
+function borrarTodo() {
+    localStorage.clear();
+    document.getElementById('compra2').innerHTML = "";
 }

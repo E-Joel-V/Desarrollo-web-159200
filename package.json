@@ -10,10 +10,18 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "description": "",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.12"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E-Joel-V/Desarrollo-web-159200.git"
+  },
+  "bugs": {
+    "url": "https://github.com/E-Joel-V/Desarrollo-web-159200/issues"
+  },
+  "homepage": "https://github.com/E-Joel-V/Desarrollo-web-159200#readme",
+  "description": ""
 }
